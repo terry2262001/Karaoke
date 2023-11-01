@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/main">
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="52591"
+        android:textColor="@color/red"
+        android:textSize="24dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tvNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cô Gái Đến Từ Hôm Qua"
+            android:maxLines="1"
+            android:textColor="@color/purple_500"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvNameAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:text="Song Luân"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/imgLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/imgDisLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dislike"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/imgAbout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/about" />
+
+            <ImageButton
+                android:id="@+id/imgDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/trash"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

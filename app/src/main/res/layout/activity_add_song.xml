@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSong"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm bài hát"
+        android:textColor="@color/red"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Mã bài hát"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etId"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etNameSong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Tác Giả"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etNameAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_horizontal"
+       android:layout_marginTop="30dp"
+       >
+       <Button
+           android:id="@+id/btAdd"
+           android:layout_width="wrap_content"
+           android:layout_height="60dp"
+           android:text="Thêm"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
